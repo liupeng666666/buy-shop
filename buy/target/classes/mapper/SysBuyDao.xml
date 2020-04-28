@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.SysBuyDao">
+
+    <!--根据用户名查询用户信息 仅程序内部使用-->
+    <select id="getSysBuySelect" resultType="map">
+        SELECT
+        a.pid,
+        a.nickname,
+        a.phone,
+        a.img,
+        a.address,
+        a.type,
+        b.username,
+        a.appid,
+        a.endtime,
+        b.img as 'user_img',
+        b.nickname as 'user_nickname',
+        b.phone as 'user_phone',
+        b.pid as 'userid',b.roleid,c.SHORT_NAME as 'city_name'
+        FROM
+        sub_buy AS a
+        INNER JOIN buy_user AS b ON a.pid = b.buyid
+        LEFT JOIN sys_city as c on c.CITY_CODE=a.city_code
+        WHERE
+        b.pid = #{pid} and a.isdel=0 and a.state=0 and a.endtime>now() and b.state=0 and b.isdel=0
+
+    </select>
+
+    <select id="SysBuyLogin" resultType="map">
+        SELECT
+        a.pid,
+        a.nickname,
+        a.phone,
+        a.img,
+        a.address,
+        a.type,
+        b.username,
+        a.appid,
+        a.wechat_appid,
+        a.endtime,
+        b.img as 'user_img',
+        b.nickname as 'user_nickname',
+        b.phone as 'user_phone',
+        b.pid as 'userid',b.roleid,c.SHORT_NAME as 'city_name'
+        FROM
+        sub_buy AS a
+        INNER JOIN buy_user AS b ON a.pid = b.buyid
+        LEFT JOIN sys_city as c on c.CITY_CODE=a.city_code
+        WHERE
+        b.username=#{username} and b.password=#{password} and a.isdel=0 and a.state=0 and a.endtime>now() and b.state=0
+        and b.isdel=0
+
+    </select>
+
+    <update id="SysBuyUpdate">
+        update sub_buy set complete_member=#{num} where pid=#{buyid}
+    </update>
+</mapper>

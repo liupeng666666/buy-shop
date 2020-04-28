@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyRechargeDao">
+    <select id="BuyRechargeSelect" resultType="map">
+        select pid,money,actual,state, DATE_FORMAT(
+        createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime from buy_recharge_settings where isdel=0 and buyid=#{buyid}
+    </select>
+
+    <insert id="BuyRechargeInsert">
+        INSERT INTO `buy_recharge_settings` (
+        `pid`,
+        `money`,
+        `actual`,
+        `createtime`,
+        `buyid`,
+        `updatetime`,
+        `state`,
+        `isdel`,
+        `sys_userid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{money},
+        #{actual},
+        now(),
+        #{buyid},
+        now(),
+        '0',
+        '0',
+        #{sys_userid}
+        );
+
+
+    </insert>
+    <update id="BuyRechargeUpdate">
+        UPDATE `buy_recharge_settings`
+        SET `money` = #{money},
+        `actual` = #{actual},
+        `sys_userid` = #{sys_userid}
+        WHERE
+        `pid` = #{pid}
+        AND buyid = #{buyid}
+
+    </update>
+
+
+    <update id="BuyRechargeUpdateState">
+        update `buy_recharge_settings`
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid} and buyid=#{buyid}
+    </update>
+
+
+    <select id="BuyRechargePayLogSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,a.*,b.nickname,b.img
+        FROM
+        sub_pay_log AS a
+        INNER JOIN sub_user AS b ON a.userid = b.pid
+
+        where a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            and (b.nickname like CONCAT('%',#{map.nickname},'%') or a.orderid LIKE CONCAT('%',#{map.nickname},'%'))
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+    <select id="BuyRechargePayLogCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        sub_pay_log AS a
+        INNER JOIN sub_user AS b ON a.userid = b.pid
+
+        where a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            and (b.nickname like CONCAT('%',#{map.nickname},'%') or a.orderid LIKE CONCAT('%',#{map.nickname},'%'))
+        </if>
+    </select>
+</mapper>

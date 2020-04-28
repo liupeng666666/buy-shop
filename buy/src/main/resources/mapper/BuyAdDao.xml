@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyAdDao">
+    <select id="BuyAdSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime, a.*,b.title
+        FROM
+        buy_ad as a LEFT JOIN buy_goods as b on a.url=b.pid
+        WHERE
+        a.isdel = 0
+        AND a.buyid = #{buyid}
+        <if test="state!=null and state!=''">
+            and a.state=#{state}
+        </if>
+        order by a.updatetime desc
+        limit #{page},#{num}
+
+    </select>
+
+    <select id="BuyAdCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        buy_ad as a
+        WHERE
+        a.isdel = 0
+        AND a.buyid = #{buyid}
+        <if test="state!=null and state!=''">
+            and a.state=#{state}
+        </if>
+    </select>
+    <insert id="BuyAdInsert">
+        INSERT INTO `buy_ad` (
+        `pid`,
+        `img`,
+        `buyid`,
+        `createtime`,
+        `url`,
+        `memo`,
+        `sys_userid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{img},
+        #{buyid},
+        now(),
+        #{url},
+        #{memo},
+        #{sys_userid}
+        );
+    </insert>
+
+    <update id="BuyAdUpdate">
+        UPDATE `buy_ad`
+        SET
+        `url` = #{url},
+        `img` = #{img},
+        `memo` = #{memo},
+        `sys_userid` = #{sys_userid}
+        WHERE
+        `pid` = #{pid};
+
+
+    </update>
+
+    <update id="BuyAdUpdateState">
+        update `buy_ad`
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid}
+    </update>
+
+</mapper>

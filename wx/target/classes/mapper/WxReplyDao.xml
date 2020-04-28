@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxReplyDao">
+    <select id="WxReplySelect" resultType="map">
+        SELECT
+        DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%s') AS createtime,a.*
+        FROM
+        wechat.wx_reply as a
+        WHERE
+        buyid = #{map.buyid} and isdel=0
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and style=#{map.style}
+        </if>
+        <if test="map.event!=null and map.event!=''">
+            and event=#{map.event}
+        </if>
+        <if test="map.key!=null and map.key!=''">
+            and `key`=#{map.key}
+        </if>
+        ORDER BY
+        createtime DESC,
+        state ASC
+
+        limit #{page},#{num}
+    </select>
+
+    <select id="WxReplyCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        wechat.wx_reply as a
+        WHERE
+        buyid = #{map.buyid} and isdel=0
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and style=#{map.style}
+        </if>
+        <if test="map.event!=null and map.event!=''">
+            and event=#{map.event}
+        </if>
+        <if test="map.key!=null and map.key!=''">
+            and `key`=#{map.key}
+        </if>
+    </select>
+
+    <insert id="WxReplyInsert">
+        INSERT INTO `wechat`.`wx_reply` (
+        `pid`,
+        `type`,
+        `mediaid`,
+        `createtime`,
+        `text`,
+        `sys_userid`,
+        `updatetime`,
+        `isdel`,
+        `state`,
+        `appid`,
+        `buyid`,
+        `style`,
+        `event`,
+        `key`
+        )
+        VALUES
+        (
+        #{pid},
+        #{type},
+        #{mediaid},
+        now(),
+        #{text},
+        #{sys_userid},
+        now(),
+        0,
+        0,
+        #{appid},
+        #{buyid},
+        #{style},
+        #{event},
+        #{key}
+        );
+    </insert>
+
+    <update id="WxReplyUpdate">
+        update wechat.wx_reply
+        <set>
+            <if test="isdel!=null and isdel!=''">
+                `isdel`=#{isdel},
+            </if>
+            <if test="state!=null and state!=''">
+                `state`=#{state},
+            </if>
+            <if test="type!=null and type!=''">
+                `type`=#{type},
+            </if>
+            <if test="mediaid!=null and mediaid!=''">
+                `mediaid`=#{mediaid},
+            </if>
+            <if test="text!=null and text!=''">
+                `text`=#{text},
+            </if>
+            <if test="style!=null and style!=''">
+                `style`=#{style},
+            </if>
+            <if test="event!=null and event!=''">
+                `event`=#{event},
+            </if>
+            <if test="key!=null and key!=''">
+                `key`=#{key},
+            </if>
+            <if test="text==''">
+                `text`=#{text},
+            </if>
+            <if test="mediaid==''">
+                `mediaid`=#{mediaid},
+            </if>
+            <if test="key==''">
+                `key`=#{key},
+            </if>
+        </set>
+        where pid=#{pid}
+    </update>
+    <update id="WxReplyUpdateState">
+        update wechat.wx_reply
+        <set>
+            <if test="isdel!=null and isdel!=''">
+                `isdel`=#{isdel},
+            </if>
+            <if test="state!=null and state!=''">
+                `state`=#{state},
+            </if>
+        </set>
+        where pid=#{pid}
+    </update>
+    <update id="WxReplyStateUpdate">
+        update wechat.wx_reply set state=1
+        <where>
+            <if test="style=='event'">
+                `style`=#{style} and `event`=#{event}
+                <if test="event=='click'">
+                    and `key`=#{key}
+                </if>
+            </if>
+            <if test="style=='text'">
+                `style`=#{style} and `key`=#{key}
+            </if>
+            and isdel=0 and state=0
+        </where>
+    </update>
+
+    <select id="WxReplyDanSelect" resultType="map">
+        select * from wechat.wx_reply where pid=#{pid}
+    </select>
+
+</mapper>

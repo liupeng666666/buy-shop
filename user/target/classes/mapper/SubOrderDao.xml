@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubOrderDao">
+    <select id="SubOrderSelectById" resultType="map">
+        SELECT * FROM sub_order where pid=#{orderid}
+    </select>
+    <update id="SubOrderListUpdate">
+        update `sub_order_list` set state=1 where goodsid=#{goodsid} and orderid=#{orderid} and userid=#{userid}
+    </update>
+    <update id="SubOrderUpdate">
+        update `sub_order` set state=5 where pid=#{orderid}
+    </update>
+    <update id="SubOrderLogInsert">
+        INSERT INTO `sub_order_log`(`pid`, `orderid`, `state`, `createtime`) VALUES (#{pid}, #{orderid}, 5, now());
+    </update>
+    <select id="SubOrderListSelectById" resultType="map">
+        select DATE_FORMAT(spl.createtime, '%Y-%m-%d %H:%i:%s') AS createtime,spl.money,spl.memo,spl.type,su.img as
+        suimg,su.nickname as sunickname,su.pid as supid,sol.*,so.payment,bg.img as bgimg from sub_order_list sol
+        INNER JOIN sub_order so ON so.pid=sol.orderid
+        INNER JOIN buy_goods bg ON bg.pid=sol.goodsid
+        INNER JOIN (select * from sub_pay_log where type=4 ) spl ON spl.orderid=sol.orderid
+        INNER JOIN (select * from sub_user where isdel=0) su ON su.pid = spl.userid
+        where sol.orderid=#{map.orderid}
+    </select>
+</mapper>

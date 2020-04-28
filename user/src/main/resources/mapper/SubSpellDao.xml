@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubSpellDao">
+    <select id="SubSpellSelectByPage" resultType="map">
+        SELECT DATE_FORMAT(sp.createtime, '%Y-%m-%d %H:%i:%s' ) AS createtime,sp.*,so.pid as sopid,so.total as
+        sototal,so.payment as sopayment,su.img as suimg,su.nickname as sunickname,bm.img as bmimg,bm.nickname as
+        bmnickname,so.paystate as sopaystate,sol.title as soltitle,sol.price as solprice,sol.number as solnumber,bg.img
+        as bgimg FROM `sub_spell` sp
+        INNER JOIN sub_order so ON so.pid= sp.orderid
+        INNER JOIN sub_user su ON su.pid=sp.userid
+        INNER JOIN buy_mumber bm ON bm.pid=sp.mumberid
+        INNER JOIN buy_goods bg ON bg.pid=sp.goodsid
+        INNER JOIN sub_order_list sol ON sol.orderid=sp.orderid
+        where sp.state=2 and sp.refund=0
+        <if test="map.mumberid!=null and map.mumberid!=''">
+            AND sp.mumberid=#{map.mumberid}
+        </if>
+        <if test="map.paystate!=null and map.paystate!=''">
+            AND so.paystate=#{map.paystate}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            AND su.nickname like CONCAT('%',#{map.nickname},'%')
+        </if>
+        limit #{start},#{end}
+    </select>
+    <select id="SubSpellSelectByCount" resultType="int">
+        SELECT count(0) FROM `sub_spell` sp
+        INNER JOIN sub_order so ON so.pid= sp.orderid
+        INNER JOIN sub_user su ON su.pid=sp.userid
+        INNER JOIN buy_mumber bm ON bm.pid=sp.mumberid
+        INNER JOIN buy_goods bg ON bg.pid=sp.goodsid
+        INNER JOIN sub_order_list sol ON sol.orderid=sp.orderid
+        where sp.state=2 and sp.refund=0
+        <if test="map.mumberid!=null and map.mumberid!=''">
+            AND sp.mumberid=#{map.mumberid}
+        </if>
+        <if test="map.paystate!=null and map.paystate!=''">
+            AND so.paystate=#{map.paystate}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            AND su.nickname like CONCAT('%',#{map.nickname},'%')
+        </if>
+    </select>
+    <select id="SubSpellSelectById" resultType="map">
+        select * from `sub_spell` where pid=#{spellid}
+    </select>
+    <update id="SubSpellUpdate">
+        update `sub_spell` set refund=1, refundtime=now(), refund_userid=#{refund_userid} where pid=#{spellid}
+    </update>
+</mapper>

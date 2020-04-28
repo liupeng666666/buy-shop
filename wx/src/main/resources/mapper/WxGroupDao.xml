@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxGroupDao">
+    <select id="WxGroupSelect" resultType="map">
+        SELECT DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%s') AS createtime,a.* FROM wechat.wx_group as a
+        WHERE buyid = #{map.buyid} and isdel=0
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+
+        ORDER BY
+        createtime DESC,
+        state ASC
+
+        limit #{page},#{num}
+    </select>
+
+    <select id="WxGroupCount" resultType="int">
+        SELECT count(0) FROM wechat.wx_group as a
+        WHERE buyid = #{map.buyid} and isdel=0
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+
+        ORDER BY
+        createtime DESC,
+        state ASC
+
+    </select>
+
+    <insert id="WxGroupInsert">
+        INSERT INTO `wechat`.`wx_group`(`pid`, `stage`, `frequency`, `createtime`, `sys_userid`, `memo`, `buyid`,
+        `isdel`, `state`,openid)
+        VALUES (#{pid}, #{stage},0, now(), #{sys_userid}, #{memo}, #{buyid}, 0, 1,#{openid});
+    </insert>
+
+    <update id="WxGroupUpdate">
+        update wechat.wx_group
+        <set>
+            <!--<if test="isdel!=null and isdel!=''">-->
+            <!--`isdel`=#{isdel},-->
+            <!--</if>-->
+            <if test="state!=null and state!=''">
+                `state`=#{state},
+            </if>
+            <if test="stage!=null and stage!=''">
+                `stage`=#{stage},
+            </if>
+            <!--<if test="frequency!=null and frequency!=''">-->
+            <!--`frequency`=#{frequency},-->
+            <!--</if>-->
+            <if test="memo!=null and memo!=''">
+                `memo`=#{memo},
+            </if>
+            <if test="openid!=null and openid!=''">
+                `openid`=#{openid},
+            </if>
+        </set>
+        where pid=#{pid}
+    </update>
+    <update id="WxGroupUpdateState">
+        update wechat.wx_group
+        <set>
+            <if test="isdel!=null and isdel!=''">
+                `isdel`=#{isdel},
+            </if>
+            <if test="state!=null and state!=''">
+                `state`=0,
+            </if>
+            <if test="frequency!=null and frequency!=''">
+                `frequency`=#{frequency},
+            </if>
+        </set>
+        where pid=#{pid} and buyid=#{buyid} and isdel=0
+    </update>
+
+    <update id="WxGroupModifyState">
+        update wechat.wx_group set state=1
+        where buyid=#{buyid} and isdel=0 and state=0
+    </update>
+    <select id="WxGroupByTime" resultType="int">
+        select max(frequency) from wechat.wx_group
+        where createtime BETWEEN date_add(date_add( last_day(now()), INTERVAL 1 DAY ), INTERVAL - 1 MONTH ) AND
+        last_day(NOW())
+        and isdel=0 and buyid=#{buyid}
+    </select>
+
+
+    <update id="WxGroupUpdateType">
+        update wechat.wx_group
+        <set>
+            <if test="type!=null and type!=''">
+                `state`=1,
+            </if>
+            <if test="frequency!=null and frequency!=''">
+                `frequency`=#{frequency},
+            </if>
+        </set>
+        where pid=#{pid} and buyid=#{buyid} and isdel=0
+    </update>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubPayLogDao">
+    <insert id="SubPayLogInsert">
+        INSERT INTO `sub_user`.`sub_pay_log`(`pid`, `type`, `money`, `createtime`, `userid`, `buyid`, `isdel`,
+        `orderid`, `memo`)
+        VALUES (#{id}, 4, #{payment}, now(), #{userid}, #{buyid}, 0, #{orderid}, #{memo});
+    </insert>
+    <select id="SubPayLogSelectByPage" resultType="map">
+        select * from `sub_pay_log`
+        where isdel=0 and buyid=#{map.buyid} and type=4
+        order by createtime desc
+        limit #{start},#{end}
+    </select>
+    <select id="SubPayLogSelectByCount" resultType="int">
+        select count(0) from `sub_pay_log`
+        where isdel=0 and buyid=#{map.buyid} and type=4
+        order by createtime desc
+    </select>
+</mapper>

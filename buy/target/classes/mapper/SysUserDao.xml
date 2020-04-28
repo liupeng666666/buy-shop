@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.SysUserDao">
+    <select id="SysUserSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.updatetime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS updatetime,
+        a.*, b.nickname as 'c_nickname',
+        c.name as 'role_name'
+        FROM
+        buy_user AS a
+        LEFT JOIN buy_user AS b ON a.userid = b.pid
+        INNER JOIN buy_role as c on a.roleid=c.pid
+        WHERE
+        a.buyid = #{buyid} and a.isdel=0 and c.state=0 and c.isdel=0
+
+    </select>
+
+
+    <select id="SysUserCx" resultType="int">
+        select count(0) from buy_user where username=#{username}
+    </select>
+
+    <insert id="SysUserInsert">
+        INSERT INTO `buy_user` (
+        `pid`,
+        `nickname`,
+        `username`,
+        `password`,
+        `img`,
+        `phone`,
+        `state`,
+        `isdel`,
+        `buyid`,
+        `roleid`,
+        `createtime`,
+        `updatetime`,
+        `userid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{nickname},
+        #{phone},
+        #{password},
+        #{img},
+        #{phone},
+        '0',
+        '0',
+        #{buyid},
+        #{roleid},
+        now(),
+        now(),
+        #{userid}
+        );
+
+
+    </insert>
+
+    <update id="SysUserUpdate">
+        update `buy_user`
+        <set>
+            <if test="nickname!=null and nickname!=''">
+                nickname=#{nickname},
+            </if>
+            <if test="img!=null and img!=''">
+                img=#{img},
+            </if>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+            <if test="userid!=null and userid!=''">
+                userid=#{userid},
+            </if>
+            <if test="roleid!=null and roleid!=''">
+                roleid=#{roleid},
+            </if>
+        </set>
+        where pid=#{pid}
+    </update>
+
+</mapper>

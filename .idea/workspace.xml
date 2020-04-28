@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="launcher:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63a55f24-7fac-4f58-ba7a-260ad5dd756a" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/launcher_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/launcher_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/launcher_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/launcher_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_meddb_ueditor_20180110.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_meddb_ueditor_20180110.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_common_3_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_common_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_mp_3_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_binarywang_weixin_java_mp_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_tobato_fastdfs_client_1_26_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_tobato_fastdfs_client_1_26_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_13_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_vfs2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_vfs2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_3_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20171018.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20171018.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j_1_3_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j_1_3_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/buy-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/buy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/buy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyAdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyAdController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyCouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyCouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyGoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyIntegralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyIntegralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyIpLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyIpLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberLWithdrawController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberLWithdrawController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberMoneyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberMoneyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyRechargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyRechargeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SysRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/UeditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/UeditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/authController.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/authController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyAdDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyAdDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyClassDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyCouponDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyCouponDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyGoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyGoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyIntegralDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyIntegralDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyIpLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyIpLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberMoneyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberMoneyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberWithdrawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyMumberWithdrawDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyRechargeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyRechargeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/BuyUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysBuyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysBuyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysModuleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysModuleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SysUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyAdImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyAdImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyClassImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyClassImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyCouponImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyCouponImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyGoodsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyGoodsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyIntegralImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyIntegralImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyIpLogImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyIpLogImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberLogImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberLogImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberMoneyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberMoneyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberWithdrawImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberWithdrawImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyRechargeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyRechargeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyUserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysBuyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysBuyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysRoleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysRoleImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SysUserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyAdInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyAdInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyClassInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyClassInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyGoodsInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyGoodsInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyIpLogInteface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyIpLogInteface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberLogInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberLogInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberMoneyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberMoneyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberWithdrawInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyMumberWithdrawInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyRechargeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyRechargeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/BuyUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SysRoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SysRoleInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SysUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SysUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyAdDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyAdDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyClassDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyClassDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyCouponDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyCouponDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyGoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyGoodsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyIntegralDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyIntegralDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyIpLogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyIpLogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberLogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberLogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberMoneyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberMoneyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberWithdrawDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyMumberWithdrawDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyRechargeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyRechargeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysBuyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysBuyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysModuleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysModuleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysRoleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysRoleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buy/src/main/resources/mapper/SysUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/launcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/launcher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com.whp/Application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com.whp/Application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/ErrorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/ErrorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/jwt/JWTToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/jwt/JWTToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/jwt/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/shrio/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com.whp/config/shrio/ShiroConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/resources/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/resources/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq/mq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mq/mq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/Impl/MqOrderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/Impl/MqOrderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/utils/ConnectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/utils/ConnectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Controller/OrderSubOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Controller/OrderSubOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Dao/OrderSubOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Dao/OrderSubOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Impl/OrderSubOrderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Impl/OrderSubOrderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Interface/OrderSubOrderInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Interface/OrderSubOrderInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/mapper/SubOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/mapper/SubOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubCouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubCouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubMumberRecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubMumberRecruitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubPayLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubPayLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubSpellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubSpellController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/BuyCouponbDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/BuyCouponbDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubCouponDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubCouponDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubMumberRecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubMumberRecruitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubPayLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubPayLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubSpellDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubSpellDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubCouponImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubCouponImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubMumberRecruitImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubMumberRecruitImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubPayLogImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubPayLogImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubSpellImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubSpellImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubUserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubCouponInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubCouponInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubPayLogInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubPayLogInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubSpellInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubSpellInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/BuyCouponbDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/BuyCouponbDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubCouponDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubCouponDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubMumberRecruitDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubMumberRecruitDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubPayLogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubPayLogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubSpellDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubSpellDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/Enum/BuyEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/Enum/BuyEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/CaptchaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/CaptchaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FastDFSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FastDFSUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FdfsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FdfsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/ImgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/ImgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MD5Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MVUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MVUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/PdfUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/PdfUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/QrCodeCreateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/QrCodeCreateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SSLClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SSLClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SnowFlake.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SnowFlake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxImgTextController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxImgTextController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxBuyMumberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxBuyMumberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxImgTextDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxImgTextDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMediaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMediaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxReplyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxReplyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxSubBuyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxSubBuyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WechatAtuthImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WechatAtuthImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxGroupImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxGroupImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxImgTextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxImgTextImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMediaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMediaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMenuImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMenuImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxReplyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxReplyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxUserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WechatAuthInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WechatAuthInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxGroupInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxGroupInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxImgTextInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxImgTextInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMediaInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMediaInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMenuInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMenuInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxReplyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxReplyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Utils/WxConfigUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Utils/WxConfigUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxBuyMumberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxBuyMumberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxGroupDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxImgTextDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxImgTextDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMediaDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMediaDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMenuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMenuDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxNewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxNewsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxReplyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxReplyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxSubBuyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxSubBuyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/src/main/resources/mapper/WxUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx/wx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wx/wx.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/launcher/target/" />
+    <ignored path="$PROJECT_DIR$/buy/target/" />
+    <ignored path="$PROJECT_DIR$/utils/target/" />
+    <ignored path="$PROJECT_DIR$/user/target/" />
+    <ignored path="$PROJECT_DIR$/order/target/" />
+    <ignored path="$PROJECT_DIR$/wx/target/" />
+    <ignored path="$PROJECT_DIR$/mq/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="163" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/launcher/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubMumberRecruitImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubPayLogImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com.whp/Application/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="26" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FdfsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/HttpClientUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SnowFlake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WxReplyUpdate</find>
+      <find>WxReplyUpdateState</find>
+      <find>WxReplyDanSelect</find>
+      <find>WxSubBuyPidDan</find>
+      <find>WxGroupModifyState</find>
+      <find>WxMenuSelectById</find>
+      <find>wxImgTextUpdateById</find>
+      <find>WxGroupUpdateState</find>
+      <find>wxImgTextUpdateByReplyId</find>
+      <find>WxImgTextSelectById</find>
+      <find>fu2</find>
+      <find>image2byte</find>
+      <find>uploadFile</find>
+      <find>WxMediaInsert</find>
+      <find>WxImgTextSelectByReplyId</find>
+      <find>type</find>
+      <find>WxMediaSelectById</find>
+      <find>WxMediaSelectByStyle</find>
+      <find>WxUserSs</find>
+      <find>WxGroupSelect</find>
+      <find>WxGroupUpdate</find>
+      <find>wxSubBuyDao</find>
+      <find>WxUserSelect</find>
+      <find>mqOrderInterface</find>
+      <find>BuyClassInsert</find>
+      <find>BuyClassSelectState</find>
+      <find>RedisUpdate</find>
+      <find>101</find>
+      <find>OrderSubOrderSelect</find>
+      <find>project</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Class</replace>
+      <replace>BuyRecharge</replace>
+      <replace>BuyCoupon</replace>
+      <replace>Integral</replace>
+      <replace>BuyIntegral</replace>
+      <replace>BuyAd</replace>
+      <replace>buy_ad</replace>
+      <replace>BuyIpLog</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wx/pom.xml" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubUserController.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Dao/SubUserDao.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Interface/SubUserInterface.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubUserImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxNewsInterface.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxNewsDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxNewsController.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxNewsImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxNewsDao.xml" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyGoodsController.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMenuInterface.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMenuDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxImgTextInterface.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxImgTextImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxImgTextDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxReplyInterface.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxReplyDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxReplyDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxGroupInterface.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyGoodsDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxGroupController.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxReplyImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxReplyController.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FastDFSUtils.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxImgTextDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMenuController.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMenuImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMenuDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxMediaController.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxMediaDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Interface/WxMediaInterface.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxMediaImpl.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxImgTextController.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MVUtil.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxMediaDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxGroupDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxGroupDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/resources/mapper/WxUserDao.xml" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxUserDao.java" />
+        <option value="$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxGroupImpl.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/resources/mapper/BuyClassDao.xml" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyClassController.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/ImgUtil.java" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SubTaskInterface.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SubTaskDao.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SubTaskImpl.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SubTaskController.java" />
+        <option value="$PROJECT_DIR$/buy/src/main/resources/mapper/SubTaskDao.xml" />
+        <option value="$PROJECT_DIR$/launcher/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="buy-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="buy-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="250" />
+    <option name="y" value="3" />
+    <option name="width" value="1143" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.whp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.whp" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.whp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.whp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Enum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="buy-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="buy-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587128178502" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15332031" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\ideapro\buy-shop\wx\src\main\resources\mapper" />
+      <recent name="F:\ideapro\buy-shop\user\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whp.buyshop.buy.Dao" />
+      <recent name="com.whp.buyshop.buy.Impl" />
+      <recent name="com.whp.buyshop.buy.Interface" />
+      <recent name="com.whp.buyshop.buy.Controller" />
+      <recent name="com.whp.buyshop.utils.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideapro\buy-shop\buy\src\main\resources\mapper" />
+      <recent name="F:\ideapro\buy-shop\wx\src\main\resources\mapper" />
+      <recent name="F:\ideapro\buy-shop\user\src\main\resources\mapper" />
+      <recent name="E:\IDEA\项目\buy-shop\buy\src\main\resources\mapper" />
+      <recent name="E:\IDEA\项目\buy-shop\order\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.商家系统">
+    <configuration default="true" type="Application" factoryName="应用程序">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="buy-shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whp.buyshop.BuyShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="商家系统" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9061/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="launcher:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="未命名_buy-shop_2" />
+        <option name="HTTP_PORT" value="9061" />
+        <option name="JNDI_PORT" value="1066" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52612" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="launcher:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BuyShopApplication" />
+      <item itemvalue="Tomcat Server.商家系统" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63a55f24-7fac-4f58-ba7a-260ad5dd756a" name="默认的" comment="" />
+      <created>1567734578326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567734578326</updated>
+      <workItem from="1567734582660" duration="27842000" />
+      <workItem from="1568079248857" duration="46128000" />
+      <workItem from="1568541467587" duration="6707000" />
+      <workItem from="1569380908219" duration="2809000" />
+      <workItem from="1569472621794" duration="14655000" />
+      <workItem from="1570609044488" duration="29232000" />
+      <workItem from="1571032199651" duration="33367000" />
+      <workItem from="1571277049954" duration="14469000" />
+      <workItem from="1571621312700" duration="1359000" />
+      <workItem from="1571625726847" duration="4875000" />
+      <workItem from="1571910557148" duration="9224000" />
+      <workItem from="1572569345843" duration="13411000" />
+      <workItem from="1572766606685" duration="22362000" />
+      <workItem from="1573089291169" duration="13633000" />
+      <workItem from="1573174512008" duration="4469000" />
+      <workItem from="1573432143403" duration="3004000" />
+      <workItem from="1573623874254" duration="1681000" />
+      <workItem from="1573633141403" duration="4334000" />
+      <workItem from="1573690569609" duration="6052000" />
+      <workItem from="1573780483766" duration="19120000" />
+      <workItem from="1574037951620" duration="9920000" />
+      <workItem from="1574129722746" duration="9582000" />
+      <workItem from="1574209294981" duration="22463000" />
+      <workItem from="1574295854809" duration="582000" />
+      <workItem from="1574298531150" duration="270000" />
+      <workItem from="1574299382025" duration="3993000" />
+      <workItem from="1574316024773" duration="7298000" />
+      <workItem from="1574384028728" duration="25372000" />
+      <workItem from="1574642670331" duration="10133000" />
+      <workItem from="1574757280743" duration="826000" />
+      <workItem from="1574928837248" duration="1340000" />
+      <workItem from="1574986672864" duration="10777000" />
+      <workItem from="1575246450358" duration="10905000" />
+      <workItem from="1575333424239" duration="10983000" />
+      <workItem from="1575419821800" duration="21963000" />
+      <workItem from="1575507010367" duration="17095000" />
+      <workItem from="1575593351501" duration="11966000" />
+      <workItem from="1576024067697" duration="13308000" />
+      <workItem from="1576111657729" duration="12580000" />
+      <workItem from="1576197001283" duration="21239000" />
+      <workItem from="1576456710963" duration="18136000" />
+      <workItem from="1576543525223" duration="14689000" />
+      <workItem from="1576645538495" duration="9113000" />
+      <workItem from="1576715094931" duration="21634000" />
+      <workItem from="1576802200190" duration="2060000" />
+      <workItem from="1576804328211" duration="11156000" />
+      <workItem from="1577061289840" duration="17957000" />
+      <workItem from="1577147446669" duration="12039000" />
+      <workItem from="1577233463577" duration="14030000" />
+      <workItem from="1577319836705" duration="14251000" />
+      <workItem from="1577407037935" duration="7515000" />
+      <workItem from="1577666314307" duration="725000" />
+      <workItem from="1577669640800" duration="11455000" />
+      <workItem from="1577752097110" duration="3737000" />
+      <workItem from="1577774225298" duration="744000" />
+      <workItem from="1577924202146" duration="2331000" />
+      <workItem from="1578011387517" duration="2841000" />
+      <workItem from="1578270347518" duration="2131000" />
+      <workItem from="1578357558774" duration="4391000" />
+      <workItem from="1578443575461" duration="3590000" />
+      <workItem from="1578530352256" duration="904000" />
+      <workItem from="1578536120008" duration="580000" />
+      <workItem from="1578616899269" duration="773000" />
+      <workItem from="1579050563711" duration="238000" />
+      <workItem from="1579334158395" duration="4273000" />
+      <workItem from="1579393642583" duration="1380000" />
+      <workItem from="1586667865122" duration="27000" />
+      <workItem from="1587041156095" duration="2047000" />
+      <workItem from="1587089687376" duration="14943000" />
+      <workItem from="1587633896872" duration="864000" />
+      <workItem from="1587694368366" duration="717000" />
+      <workItem from="1587818822297" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="703197000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="设计师" order="7" />
+      <window_info id="Designer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5344262" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31967214" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="消息" order="9" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="运行" order="11" visible="true" weight="0.6666667" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Spring" order="17" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.19180328" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="控制板" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.15128593" />
+      <window_info anchor="right" id="Palette" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/buy/src/main/resources/mapper/BuyClassDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxGroupImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Impl/WxImgTextImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2592">
+          <caret line="107" column="81" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyClassImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/BuyMumberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/BuyMumberImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="89" column="67" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Controller/OrderSubOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/java/com/whp/buyshop/order/Impl/OrderSubOrderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/src/main/resources/mapper/SubOrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6615">
+          <caret line="245" column="8" selection-start-line="245" selection-start-column="8" selection-end-line="248" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Controller/SubTaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/resources/mapper/SubTaskDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Interface/SubTaskInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Impl/SubTaskImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy/src/main/java/com/whp/buyshop/buy/Dao/SubTaskDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/utils/ConnectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/Interface/MqOrderInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/src/main/java/com.whp.buyshop.mq/Impl/MqOrderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/resources/mapper/WxBuyMumberDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxGroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Controller/WxGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/src/main/java/com/whp/buyshop/wx/Dao/WxUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.en.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-592" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-486" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buy-shop.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/target/buyshop/WEB-INF/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com.whp/config/SchedulerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com.whp/config/ErrorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/Enum/BuyEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com.whp/config/jwt/JwtFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1372">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Controller/SubCouponController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SSLClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/QrCodeCreateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MVUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-894">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/JWTUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/IpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/CaptchaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/PdfUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FastDFSUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="163" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubMumberRecruitImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/whp/buyshop/user/Impl/SubPayLogImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/FdfsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/buyshop/utils/util/SnowFlake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com.whp/Application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>launcher:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>utils</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: cn.meddb:ueditor:20180110</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

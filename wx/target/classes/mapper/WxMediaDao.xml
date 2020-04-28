@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxMediaDao">
+    <insert id="WxMediaInsert">
+        INSERT INTO `wechat`.`wx_media`(`mediaid`, `url`, `memo`, `createtime`, `state`, `isdel`, `type`, `sys_userid`,
+        `buyid`,`wx_url`,`style`)
+        VALUES (#{mediaid}, #{url}, #{memo}, now(), 0, 0, #{type}, #{sys_userid}, #{buyid},#{wx_url},#{style});
+    </insert>
+    <select id="WxMediaSelectByPage" resultType="map">
+        SELECT DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%s') AS createtime,a.* FROM `wechat`.`wx_media` a where
+        a.buyid=#{map.buyid} and a.isdel=0
+        order by a.createtime desc
+        limit #{page},#{num}
+    </select>
+    <select id="WxMediaSelectByCount" resultType="int">
+        SELECT count(0) FROM `wechat`.`wx_media` a where a.buyid=#{map.buyid} and a.isdel=0 order by a.createtime desc
+    </select>
+    <select id="WxMediaSelectById" resultType="map">
+        SELECT * FROM `wechat`.`wx_media` where buyid=#{buyid} and isdel=0 order by createtime desc
+    </select>
+    <select id="WxMediaSelectByStyle" resultType="map">
+        SELECT * FROM `wechat`.`wx_media` where buyid=#{map.buyid} and `type`=1 and isdel=0 and style=#{map.style} order
+        by createtime desc
+    </select>
+    <update id="WxMediaUpdateState">
+        update `wechat`.`wx_media`
+        <set>
+            <if test="map.state!=null and map.state!=''">
+                state=#{map.state},
+            </if>
+            <if test="map.isdel!=null and map.isdel!=''">
+                isdel=#{map.isdel},
+            </if>
+        </set>
+        WHERE mediaid=#{map.pid}
+    </update>
+
+</mapper>

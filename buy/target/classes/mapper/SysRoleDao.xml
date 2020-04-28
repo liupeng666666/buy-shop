@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.SysRoleDao">
+    <select id="SysRoleSelect" resultType="map">
+        select DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%s') as createtime,DATE_FORMAT(a.updatetime,'%Y-%m-%d %H:%i:%s')
+        as updatetime,a.*,b.nickname from buy_role as a LEFT JOIN buy_user as b on a.userid=b.pid where a.buyid=#{buyid}
+        and a.isdel=0
+    </select>
+    <insert id="SysRoleInsert">
+        INSERT INTO `buy_role` (
+        `pid`,
+        `name`,
+        `state`,
+        `isdel`,
+        `createtime`,
+        `userid`,
+        `updatetime`,
+        `buyid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{name},
+        '0',
+        '0',
+        now(),
+        #{userid},
+        NOW(),
+        #{buyid}
+        );
+
+
+    </insert>
+
+    <insert id="SysRoleModuleInsert">
+        INSERT INTO `buy_role_module` (`pid`, `roleid`, `moduleid`) VALUES (#{pid}, #{roleid},#{moduleid});
+    </insert>
+
+    <delete id="SysRoleModuleDel">
+        delete from `buy_role_module` where roleid=#{roleid}
+    </delete>
+
+    <update id="SysRoleUpdate">
+        update `buy_role`
+        <set>
+            <if test="name!=null and name!=''">
+                name=#{name},
+            </if>
+            <if test="userid!=null and userid!=''">
+                userid=#{userid},
+            </if>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+        </set>
+        where pid=#{roleid}
+    </update>
+</mapper>

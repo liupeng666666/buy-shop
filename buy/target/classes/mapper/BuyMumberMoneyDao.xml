@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyMumberMoneyDao">
+    <select id="BuyMumberMoneySelect" resultType="map">
+        SELECT
+        a.pid,
+        a.img,
+        a.nickname,
+        a.fullname,
+        a.khao,
+        a.bank,
+        a.bank_name,
+        IFNULL(b.total, 0) AS 'total',
+        IFNULL(b.total_num,0) as 'total_num',
+        IFNULL(b.surplus,0) as 'surplus',
+        IFNULL(b.sale,0) as 'sale',
+        IFNULL(b.withdraw,0) as 'withdraw'
+        FROM
+        buy_mumber AS a
+        LEFT JOIN buy_mumber_money AS b ON a.pid = b.pid
+        AND a.buyid = b.buyid
+        WHERE
+        a.buyid = #{buyid} and a.isdel=0
+    </select>
+    <select id="BuyMumberMoneySelectByMumberId" resultType="map">
+        SELECT * FROM buy_mumber_money WHERE pid = #{mumberid}
+    </select>
+    <insert id="BuyMumberMoneyInsert">
+        INSERT INTO `buy_mumber_money` (
+        `pid`,
+        `createtime`,
+        `userid`,
+        `buyid`
+        )
+        VALUES
+        (
+        #{pid},
+        now(),
+        #{userid},
+        #{buyid}
+        );
+
+
+    </insert>
+    <update id="BuyMumberMoneyUpdate">
+        update `buy_mumber_money`
+        <set>
+            <if test="money!=null and money!=''">
+                surplus=surplus-#{money},withdraw=withdraw+#{money},
+            </if>
+        </set>
+        where pid=#{mumberid}
+    </update>
+    <update id="BuyMumberMoneyUpdateFail">
+        update `buy_mumber_money`
+        <set>
+            <if test="money!=null and money!=''">
+                surplus=surplus+#{money},withdraw=withdraw-#{money},
+            </if>
+        </set>
+        where pid=#{mumberid}
+    </update>
+</mapper>

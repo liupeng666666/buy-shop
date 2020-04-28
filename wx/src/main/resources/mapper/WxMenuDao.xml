@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxMenuDao">
+    <insert id="WxMenuInsert">
+        INSERT INTO `wechat`.`wx_menu`(`pid`, `type`, `name`, `key`, `url`, `mediaid`, `appid`, `pagepath`, `url_style`,
+        `level`, `state`, `isdel`, `wechat_appid`, `buyid`, `lock`,`parentid`,`createtime`)
+        VALUES (#{pid}, #{type}, #{name}, #{key}, #{url}, #{mediaid}, #{appid}, #{pagepath}, #{url_style}, #{level}, 0,
+        0, #{wechat_appid}, #{buyid}, #{lock},#{parentid},now());
+    </insert>
+    <select id="WxMenuSelectByPage" resultType="map">
+        SELECT * FROM `wechat`.`wx_menu` where buyid=#{map.buyid} and isdel=0
+        order by createtime DESC
+        limit #{page},#{num}
+    </select>
+    <select id="WxMenuSelectByCount" resultType="int">
+        SELECT count(0) FROM `wechat`.`wx_menu` where buyid=#{map.buyid} and isdel=0 order by createtime DESC
+    </select>
+    <update id="WxMenuUpdate">
+        update `wechat`.`wx_menu`
+        <set>
+            <if test="map.name!=null and map.name!=''">
+                `name`=#{map.name},
+            </if>
+            <if test="map.level!=null and map.level!=''">
+                `level`=#{map.level},
+            </if>
+            <if test="map.lock!=null and map.lock!=''">
+                `lock`=#{map.lock},
+            </if>
+            <if test="map.type!=null and map.type!=''">
+                `type`=#{map.type},
+            </if>
+            <if test="map.key!=null">
+                <if test="map.key!=''">
+                    `key`=#{map.key},
+                </if>
+                <if test="map.key==''">
+                    `key`=#{map.key},
+                </if>
+            </if>
+            <if test="map.url!=null">
+                <if test="map.url!=''">
+                    `url`=#{map.url},
+                </if>
+                <if test="map.url==''">
+                    `url`=#{map.url},
+                </if>
+            </if>
+            <if test="map.url_style!=null and map.url_style!=''">
+                `url_style`=#{map.url_style},
+            </if>
+            <!--<if test="map.mediaid!=null and map.mediaid!=''">-->
+            <!--`mediaid`=#{map.mediaid},-->
+            <!--</if>-->
+            <if test="map.pagepath!=null">
+                <if test="map.pagepath!=''">
+                    `pagepath`=#{map.pagepath},
+                </if>
+                <if test="map.pagepath==''">
+                    `pagepath`=#{map.pagepath},
+                </if>
+            </if>
+
+        </set>
+        where pid=#{map.pid}
+    </update>
+    <update id="WxMenuUpdateState">
+        update `wechat`.`wx_menu`
+        <set>
+            <if test="map.state!=null and map.state!=''">
+                state=#{map.state},
+            </if>
+            <if test="map.isdel!=null and map.isdel!=''">
+                isdel=#{map.isdel},
+            </if>
+        </set>
+        WHERE pid=#{map.pid}
+    </update>
+    <select id="WxMenuSelectmenu" resultType="map">
+        SELECT * FROM `wechat`.`wx_menu` where buyid=#{map.buyid} and isdel=0 and parentid=0
+    </select>
+    <select id="WxMenuSelectById" resultType="map">
+        SELECT * FROM `wechat`.`wx_menu` where buyid=#{map.buyid} and `lock`=0 and isdel=0 and `type`=1
+    </select>
+    <select id="getMenuById" resultType="map">
+        SELECT * FROM `wechat`.`wx_menu` where isdel=0 and pid=#{pid}
+    </select>
+    <select id="getMenuByPid" resultType="map">
+        SELECT * FROM `wechat`.`wx_menu` where isdel=0 and parentid=#{parentid}
+    </select>
+
+    <select id="getBuyById" resultType="map">
+        select * from `buy`.`sub_buy` where pid=#{map.buyid}
+    </select>
+</mapper>

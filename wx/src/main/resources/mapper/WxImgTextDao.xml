@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxImgTextDao">
+    <select id="WxImgTextReplySelect" resultType="map">
+        select * from wechat.wx_imgtext where buyid=#{buyid} and replyid=#{replyid} and state=0 and isdel=0 and
+        type=#{type}
+        order by sort ASC limit 8;
+    </select>
+    <insert id="WxImgTextInsert">
+        INSERT INTO `wechat`.`wx_imgtext`(`pid`, `type`, `title`, `description`, `picurl`, `message`, `createtime`,
+        `sys_userid`, `replyid`, `buyid`, `appid`, `state`, `isdel`, `mediaid`, `author`, `show_pic`, `open_comment`,
+        `can_comment`)
+        VALUES (#{pid}, #{type}, #{title}, #{description}, #{picurl}, #{message}, now(), #{sys_userid}, NULL, #{buyid},
+        #{wechat_appid}, 0, 0, #{mediaid}, #{author}, #{show_pic}, #{open_comment}, #{can_comment});
+
+    </insert>
+    <select id="WxImgTextSelectByPage" resultType="map">
+        SELECT DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%s') AS createtime,DATE_FORMAT(a.updatetime,'%Y-%m-%d %H:%i:%s')
+        AS updatetime,a.* FROM `wechat`.`wx_imgtext` a where a.buyid=#{map.buyid} and a.isdel=0
+        order by a.createtime desc
+        limit #{page},#{num}
+    </select>
+    <select id="WxImgTextSelectByCount" resultType="int">
+        SELECT count(0) FROM `wechat`.`wx_imgtext` a where a.buyid=#{map.buyid} and a.isdel=0 order by a.createtime desc
+    </select>
+    <update id="WxImgTextUpdate">
+        update `wechat`.`wx_imgtext`
+        <set>
+            <if test="map.title!=null and map.title!=''">
+                title=#{map.title},
+            </if>
+            <if test="map.description!=null and map.description!=''">
+                description=#{map.description},
+            </if>
+            <if test="map.picurl!=null and map.picurl!=''">
+                picurl=#{map.picurl},
+            </if>
+            <if test="map.message!=null and map.message!=''">
+                message=#{map.message},
+            </if>
+            <if test="map.sys_userid!=null and map.sys_userid!=''">
+                sys_userid=#{map.sys_userid},
+            </if>
+            <if test="map.mediaid!=null and map.mediaid!=''">
+                mediaid=#{map.mediaid},
+            </if>
+            <if test="map.author!=null and map.author!=''">
+                author=#{map.author},
+            </if>
+            <if test="map.show_pic!=null and map.show_pic!=''">
+                show_pic=#{map.show_pic},
+            </if>
+            <if test="map.open_comment!=null and map.open_comment!=''">
+                open_comment=#{map.open_comment},
+            </if>
+            <if test="map.can_comment!=null and map.can_comment!=''">
+                can_comment=#{map.can_comment},
+            </if>
+        </set>
+        WHERE pid=#{map.pid}
+    </update>
+    <update id="WxImgTextUpdateState">
+        update `wechat`.`wx_imgtext`
+        <set>
+            <if test="map.state!=null and map.state!=''">
+                state=#{map.state},
+            </if>
+            <if test="map.isdel!=null and map.isdel!=''">
+                isdel=#{map.isdel},
+            </if>
+        </set>
+        WHERE pid=#{map.pid}
+    </update>
+    <select id="WxImgTextSelectById" resultType="map">
+        SELECT * FROM `wechat`.`wx_imgtext`
+        where buyid=#{map.buyid} and isdel=0 and type=#{map.type} and replyid is null
+        order by createtime desc
+    </select>
+    <select id="WxImgTextSelectByReplyId" resultType="map">
+        SELECT * FROM `wechat`.`wx_imgtext`
+        where buyid=#{map.buyid} and isdel=0
+        <if test="map.type!=null and map.type!=''">
+            and `type`=#{map.type}
+        </if>
+        order by replyid is not null desc,sort asc
+    </select>
+    <update id="wxImgTextUpdateById">
+        update `wechat`.`wx_imgtext`
+        <set>
+            <if test="map.sort!=null and map.sort!=''">
+                sort=#{map.sort},
+            </if>
+            <if test="map.replyid!=null and map.replyid!=''">
+                replyid=#{map.replyid},
+            </if>
+        </set>
+        WHERE pid=#{map.newsid}
+    </update>
+    <update id="wxImgTextUpdateByReplyId">
+        UPDATE `wechat`.`wx_imgtext` set replyid =null , sort=1
+        where buyid=#{map.buyid} and isdel=0 and type=#{map.ittype}
+        and replyid=#{map.pid}
+    </update>
+</mapper>

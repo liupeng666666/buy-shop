@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.BuyCouponbDao">
+    <select id="BuyCouponSelectById" resultType="map">
+        SELECT DATE_FORMAT(a.endtime,'%Y-%m-%d %H:%i:%s') AS endTime,a.* FROM buy_coupon a
+        WHERE a.isdel=0 AND a.pid=#{map.couponid}
+    </select>
+    <update id="BuyCouponUpdateNumber">
+        update buy_coupon set w_number=w_number+#{map.w_number} where pid=#{map.couponid}
+    </update>
+</mapper>

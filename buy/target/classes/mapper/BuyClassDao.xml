@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyClassDao">
+    <select id="BuyClassSelect" resultType="map">
+        SELECT
+        pid,`name`
+        FROM
+        buy_class
+        WHERE
+        state = 0
+        AND isdel = 0
+        AND buyid = #{buyid}
+
+    </select>
+
+    <select id="BuyClassSelectState" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime, a.*
+        FROM
+        buy_class as a
+        WHERE
+        a.isdel = 0
+        AND a.buyid = #{buyid}
+    </select>
+
+    <insert id="BuyClassInsert">
+        INSERT INTO `buy_class` (
+        `pid`,
+        `name`,
+        `img`,
+        `createtime`,
+        `buyid`,
+        `state`,
+        `isdel`,
+        `sys_userid`,
+        `holiday_img`
+        )
+        VALUES
+        (
+        #{pid},
+        #{name},
+        #{img},
+        now(),
+        #{buyid},
+        '0',
+        '0',
+        #{sys_userid},
+        #{holiday_img}
+        );
+
+
+    </insert>
+
+    <update id="BuyClassUpdate">
+        UPDATE `buy_class`
+        SET
+        `name` = #{name},
+        `img` = #{img},
+        `buyid` = #{buyid},
+        `sys_userid` = #{sys_userid},
+        `holiday_img` = #{holiday_img}
+        WHERE
+        `pid` = #{pid};
+
+
+    </update>
+
+    <update id="BuyClassUpdateState">
+        update `buy_class`
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid}
+    </update>
+
+    <select id="BuyClassAdminSelect" resultType="map">
+        SELECT
+        `name`,img,pid
+        FROM
+        sys_class
+        WHERE
+        state = 0
+        AND isdel = 0
+    </select>
+</mapper>

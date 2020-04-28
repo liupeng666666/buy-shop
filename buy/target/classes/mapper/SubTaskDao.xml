@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.SubTaskDao">
+    <insert id="SubTaskInsert">
+        INSERT INTO `community`.`sub_task`(`pid`, `name`, `num`, `money`, `state`, `isdel`, `createtime`,`sys_userid` )
+        VALUES (#{pid}, #{name}, #{num}, #{money}, 0, 0, now(), #{sys_userid});
+
+    </insert>
+</mapper>

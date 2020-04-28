@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubMumberRecruitDao">
+    <select id="SubMumberRecruitSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        a.*, b.img,
+        b.nickname,
+        c.fullname as 'm_fullname',
+        c.nickname as 'm_nickname',
+        c.img as 'm_img'
+        FROM
+        sub_mumber_recruit AS a
+        INNER JOIN sub_user AS b ON a.userid = b.pid
+        LEFT JOIN buy_mumber AS c ON c.pid = a.mumberid and a.buyid=c.buyid
+
+        where a.buyid=#{buyid}
+    </select>
+</mapper>

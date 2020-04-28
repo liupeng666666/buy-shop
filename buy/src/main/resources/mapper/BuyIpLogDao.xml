@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyIpLogDao">
+    <insert id="BuyIpLogInsert">
+        INSERT INTO `buy_ip_log` (
+        `pid`,
+        `userid`,
+        `ip`,
+        `country`,
+        `city`,
+        `region`,
+        `area`,
+        `isp`,
+        `createtime`
+        )
+        VALUES
+        (
+        #{pid},
+        #{userid},
+        #{ip},
+        #{country},
+        #{city},
+        #{region},
+        #{area},
+        #{isp},
+        now()
+        );
+    </insert>
+    <select id="BuyIpLogSelect" resultType="map">
+        select * from `buy_ip_log` where userid=#{userid} ORDER BY createtime desc limit 1;
+    </select>
+</mapper>

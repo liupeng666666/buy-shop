@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.order.Dao.OrderSubOrderDao">
+    <select id="OrderSubOrderSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,a.*, b.province,
+        b.city,
+        b.area,
+        b.message,
+        b.`name` AS 'address_name',
+        b.phone,
+        c.nickname,
+        c.img as 'userimg',
+        d.fullname as 'fullname',
+        d.img as 'mumberimg'
+        FROM
+        sub_order AS a
+        LEFT JOIN sub_address AS b ON a.addressid = b.pid
+        INNER JOIN sub_user as c on c.pid=a.userid
+        INNER JOIN buy_mumber as d on d.pid=a.mumberid
+        WHERE
+        a.buyid = #{map.buyid} and c.isdel=0
+        <if test="map.mumberid!=null and map.mumberid!=''">
+            and a.mumberid=#{map.mumberid}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.paystate!=null and map.paystate!=''">
+            and a.paystate=#{map.paystate}
+        </if>
+        <if test="map.iscoupon!=null and map.iscoupon!=''">
+            and a.iscoupon=#{map.iscoupon}
+        </if>
+        <if test="map.isintegral!=null and map.isintegral!=''">
+            and a.isintegral=#{map.isintegral}
+        </if>
+        <if test="map.ismention!=null and map.ismention!=''">
+            and a.ismention=#{map.ismention}
+        </if>
+        <if test="map.isgive!=null and map.isgive!=''">
+            and a.isgive=#{map.isgive}
+        </if>
+
+        <if test="map.spell!=null and map.spell!=''">
+            and a.spell=#{map.spell}
+        </if>
+        <if test="map.shipment!=null and map.shipment!=''">
+            and a.shipment=#{map.shipment}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            and c.nickname=#{map.nickname}
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+
+    <select id="OrderSubOrderCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        sub_order AS a
+        INNER JOIN sub_user as c on c.pid=a.userid
+        WHERE
+        a.buyid =#{map.buyid} and c.isdel=0
+        <if test="map.mumberid!=null and map.mumberid!=''">
+            and a.mumberid=#{map.mumberid}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.paystate!=null and map.paystate!=''">
+            and a.paystate=#{map.paystate}
+        </if>
+        <if test="map.iscoupon!=null and map.iscoupon!=''">
+            and a.iscoupon=#{map.iscoupon}
+        </if>
+        <if test="map.isintegral!=null and map.isintegral!=''">
+            and a.isintegral=#{map.isintegral}
+        </if>
+        <if test="map.ismention!=null and map.ismention!=''">
+            and a.ismention=#{map.ismention}
+        </if>
+        <if test="map.isgive!=null and map.isgive!=''">
+            and a.isgive=#{map.isgive}
+        </if>
+
+        <if test="map.spell!=null and map.spell!=''">
+            and a.spell=#{map.spell}
+        </if>
+        <if test="map.shipment!=null and map.shipment!=''">
+            and a.shipment=#{map.shipment}
+        </if>
+        <if test="map.nickname!=null and map.nickname!=''">
+            and c.nickname=#{map.nickname}
+        </if>
+    </select>
+
+    <select id="OrderSubOrderLogSelect" resultType="map">
+        select state, DATE_FORMAT(
+        createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime from sub_order_log where orderid=#{orderid} order by createtime asc;
+    </select>
+
+    <select id="OrderSubOrderLostSelect" resultType="map">
+        SELECT
+        a.number,
+        a.price,
+        a.state,
+        a.title,
+        b.img
+        FROM
+        sub_order_list AS a
+        INNER JOIN buy_goods AS b ON a.goodsid = b.pid
+
+        where a.orderid=#{orderid} and a.buyid=#{buyid}
+    </select>
+    <select id="OrderSubOrderSelectByBuyid" resultType="int">
+        SELECT SUM(total) FROM sub_order where buyid=#{buyid}
+    </select>
+    <select id="OrderSubOrderGoodsSelect" resultType="map">
+        select any_value(b.title) as 'title',b.goodsid from sub_order as a INNER JOIN sub_order_list as b on
+        a.pid=b.orderid
+
+        where a.state = 1
+        AND a.shipment = 0
+        AND (
+        spell = 0
+        OR (spell = 1 AND assemble_state = 1)
+        )and b.shipment=0
+        and a.buyid=#{buyid}
+        GROUP BY b.goodsid
+    </select>
+
+    <select id="OrderSubOrderGoodsDanSelect" resultType="map">
+        SELECT
+        b.title,
+        b.pid,
+        a.pick,
+        b.number,
+        b.price,
+        b.orderid,
+        b.userid,
+        b.mumberid,
+        c.nickname,
+        c.img,
+        d.unit,
+        d.img AS 'goods_img',
+        DATE_FORMAT(
+        b.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime
+        FROM
+        sub_order AS a
+        INNER JOIN sub_order_list AS b ON a.pid = b.orderid
+        INNER JOIN sub_user AS c ON c.pid = b.userid
+        INNER JOIN buy_goods AS d ON d.pid = b.goodsid
+        WHERE
+        a.state = 1
+        AND a.shipment = 0
+        AND (
+        spell = 0
+        OR (spell = 1 AND assemble_state = 1)
+        )
+        AND b.shipment = 0
+        and a.buyid=#{buyid}
+        and b.goodsid=#{goodsid}
+        <if test="state==0">
+            ORDER by b.mumberid ASC limit #{page},#{num}
+        </if>
+    </select>
+
+    <select id="OrderSubOrderGoodsDanCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        sub_order AS a
+        INNER JOIN sub_order_list AS b ON a.pid = b.orderid
+        INNER JOIN sub_user AS c ON c.pid = b.userid
+        INNER JOIN buy_goods AS d ON d.pid = b.goodsid
+        WHERE
+        a.state = 1
+        AND a.shipment = 0
+        AND (
+        spell = 0
+        OR (spell = 1 AND assemble_state = 1)
+        )
+        AND b.shipment = 0
+        and a.buyid=#{buyid}
+        and b.goodsid=#{goodsid}
+    </select>
+    <select id="OrderSubOrderListDanCx" resultType="map">
+        SELECT
+        a.orderid,a.number,a.price,b.count,c.address,c.fullname,c.img as 'mumber_img',c.nickname,c.phone,d.img,d.title
+        FROM
+        sub_order_list AS a
+        LEFT JOIN (
+        SELECT
+        count(0) as 'count',
+        orderid
+        FROM
+        sub_order_list
+        WHERE
+        state = 0
+        AND isdel = 0
+        AND shipment=0
+        GROUP BY orderid
+        ) as b on a.orderid=b.orderid
+        INNER JOIN buy_mumber as c on c.pid=a.mumberid
+        INNER JOIN buy_goods as d on d.pid=a.goodsid
+
+        where a.pid=#{pid} and a.isdel=0 and a.state=0 and a.buyid=#{buyid} AND a.shipment=0
+    </select>
+
+    <update id="SubOrderListUpdate">
+        update sub_order_list set shipment=1 where pid=#{pid}
+    </update>
+    <update id="SubOrderUpdate">
+        update sub_order set shipment=1 where pid=#{orderid}
+    </update>
+
+    <insert id="SubOrderLogInsert">
+        INSERT INTO `buy`.`sub_order_log` (
+        `pid`,
+        `orderid`,
+        `state`,
+        `createtime`
+        )
+        VALUES
+        (
+        #{pid},
+        #{orderid},
+        #{state},
+        now()
+        );
+
+
+    </insert>
+
+
+    <select id="OrderSubOrderByUser" resultType="map">
+        SELECT * FROM `sub_order`
+        where userid=#{map.userid} and buyid=#{map.buyid}
+        order by createtime desc
+        limit 0,20
+    </select>
+    <select id="OrderSubOrderByOrderId" resultType="map">
+        select sol.*,so.payment from sub_order_list sol
+        INNER JOIN sub_order so ON so.pid=sol.orderid
+        where sol.orderid=#{map.orderid}
+    </select>
+</mapper>

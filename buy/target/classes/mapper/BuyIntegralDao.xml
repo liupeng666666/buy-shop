@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyIntegralDao">
+
+    <insert id="BuyIntegralInsert">
+        INSERT INTO `buy_integral` (
+        `pid`,
+        `title`,
+        `cumulative`,
+        `reduce`,
+        `type`,
+        `createtime`,
+        `updatetime`,
+        <if test="endtime!=null and endtime!=''">
+            `endtime`,
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            `cycle`,
+        </if>
+        `style`,
+        `buyid`,
+        `sys_userid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{title},
+        #{cumulative},
+        #{reduce},
+        #{type},
+        now(),
+        now(),
+        <if test="endtime!=null and endtime!=''">
+            #{endtime},
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            #{cycle},
+        </if>
+        #{style},
+        #{buyid},
+        #{sys_userid}
+        );
+
+
+    </insert>
+    <update id="BuyIntegralUpdate">
+        UPDATE `buy_integral`
+        SET `title` = #{title},
+        `cumulative` = #{cumulative},
+        `reduce` = #{reduce},
+        `type` = #{type},
+        <if test="endtime!=null and endtime!=''">
+            `endtime` = #{endtime},
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            `cycle` = #{cycle},
+        </if>
+        `style` = #{style},
+        `sys_userid`=#{sys_userid}
+        WHERE
+        `pid` = #{pid}
+        and `buyid` = #{buyid}
+    </update>
+
+
+    <update id="BuyIntegralUpdateState">
+        update `buy_integral`
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid} and buyid=#{buyid}
+    </update>
+
+
+    <select id="BuyIntegralSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS endtime,
+        a.*
+        FROM
+        buy_integral AS a
+        WHERE
+        a.isdel = 0
+        and a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and a.style=#{map.style}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and a.title like CONCAT('%',#{map.name},'%')
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+    <select id="BuyIntegralCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        buy_integral AS a
+        WHERE
+        a.isdel = 0
+        and a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and a.style=#{map.style}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and a.title like CONCAT('%',#{map.name},'%')
+        </if>
+    </select>
+
+    <select id="BuyIntegralLogSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS endtime,a.*,b.title,b.reduce,b.cumulative,c.img,c.nickname,b.style
+        FROM
+        sub_integral AS a
+        LEFT JOIN buy_integral AS b ON a.integralid = b.pid
+        INNER JOIN sub_user as c on c.pid=a.userid
+
+        where b.state=0 and b.isdel=0 and c.state=0 and c.isdel=0
+        and c.buyid=#{map.buyid}
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and b.style=#{map.style}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (c.nickname like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%'))
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+
+    <select id="BuyIntegralLogCount" resultType="int">
+        SELECT
+        count(0)
+        FROM sub_integral AS a
+        LEFT JOIN buy_integral AS b ON a.integralid = b.pid
+        INNER JOIN sub_user as c on c.pid=a.userid
+        where b.state=0 and b.isdel=0 and c.state=0 and c.isdel=0
+        and c.buyid=#{map.buyid}
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and b.style=#{map.style}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (c.nickname like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%'))
+        </if>
+    </select>
+
+</mapper>

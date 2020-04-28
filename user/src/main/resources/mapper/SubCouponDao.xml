@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubCouponDao">
+    <insert id="SubCouponInsert">
+        INSERT INTO `sub_coupon`(`pid`, `couponid`, `createtime`, `opentime`, `endtime`, `state`, `orderid`, `userid`)
+        VALUES (#{pid}, #{couponid}, now(),now(), #{endtime}, 0, NULL, #{userid});
+    </insert>
+    <select id="SubCouponSelectById" resultType="int">
+        select count(0) from `sub_coupon` where userid=#{userid} and state=0
+    </select>
+</mapper>

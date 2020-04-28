@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyMumberDao">
+    <select id="BuyMumberSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.updatetime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS updatetime,
+        a.*,b.nickname as 'c_nickname'
+        FROM
+        buy_mumber as a
+        LEFT JOIN buy_user as b on a.userid=b.pid
+        WHERE
+        a.buyid = #{buyid} and a.isdel=0
+        <if test="name!=null and name!=''">
+            and (a.fullname like CONCAT('%',#{name},'%') or a.phone like CONCAT('%',#{name},'%') or a.nickname like
+            CONCAT('%',#{name},'%') )
+        </if>
+    </select>
+    <select id="BuyMumberSelectByBuyid" resultType="int">
+        SELECT count(0) FROM buy_mumber WHERE buyid = #{buyid} and isdel=0
+    </select>
+    <select id="BuyMumberSelectByBuy" resultType="int">
+        SELECT bm.*,sb.nickname as sbnickname FROM buy_mumber bm
+        LEFT JOIN sub_buy as sb on sb.pid=bm.buyid
+        WHERE bm.buyid = #{buyid} and bm.isdel=0
+    </select>
+    <select id="BuyMumberSelectByTotal" resultType="map">
+        select bm.*,IFNULL(total,0) as total from buy_mumber bm
+        LEFT JOIN (select sum(total) as total,mumberid from `sub_order` where state=2 GROUP BY mumberid) so ON
+        so.mumberid=bm.pid
+        WHERE bm.buyid=#{buyid}
+        ORDER BY total DESC
+    </select>
+    <insert id="BuyMumberInsert">
+        INSERT INTO `buy_mumber` (
+        `pid`,
+        `nickname`,
+        `img`,
+        `fullname`,
+        `phone`,
+        `address`,
+        `openid`,
+        `buyid`,
+        `gps_lat`,
+        `gps_lon`,
+        `range`,
+        `createtime`,
+        `updatetime`,
+        `isdel`,
+        `state`,
+        `village`,
+        `userid`,
+        `fee`,
+        `khao`,
+        `bank`,
+        `bank_name`
+        )
+        VALUES
+        (
+        #{pid},
+        #{nickname},
+        #{img},
+        #{fullname},
+        #{phone},
+        #{address},
+        #{openid},
+        #{buyid},
+        #{gps_lat},
+        #{gps_lon},
+        #{range},
+        now(),
+        now(),
+        '0',
+        '0',
+        #{village},
+        #{userid},
+        #{fee},
+        #{khao},
+        #{bank},
+        #{bank_name}
+        );
+    </insert>
+
+    <select id="SysMumberOpenid" resultType="int">
+        select count(0) from `buy_mumber` where openid=#{openid} and isdel=0
+    </select>
+
+    <select id="SysMumberCount" resultType="map">
+        select b.member as 'member',IFNULL(a.num,0) as 'num' from (SELECT
+        count(0) as 'num',
+        buyid
+        FROM
+        `buy_mumber`
+        WHERE
+        buyid = #{buyid} and isdel=0) as a
+        right JOIN (select * from sub_buy where pid=#{buyid}) as b on a.buyid=b.pid
+
+    </select>
+
+    <update id="SysMumberUserUpdate">
+        update sub_user set buyid=#{buyid},mumberid=#{pid} where openid=#{openid}
+    </update>
+
+    <update id="SysMumberUpdate">
+        UPDATE `buy_mumber`
+        <set>
+            <if test="nickname!=null and nickname!=''">
+                `nickname`=#{nickname},
+            </if>
+            <if test="img!=null and img!=''">
+                `img`=#{img},
+            </if>
+            <if test="fullname!=null and fullname!=''">
+                `fullname`=#{fullname},
+            </if>
+            <if test="phone!=null and phone!=''">
+                `phone`=#{phone},
+            </if>
+            <if test="address!=null and address!=''">
+                `address`=#{address},
+            </if>
+            <if test="openid!=null and openid!=''">
+                `openid`=#{openid},
+            </if>
+            <if test="gps_lat!=null and gps_lat!=''">
+                `gps_lat`=#{gps_lat},
+            </if>
+            <if test="gps_lon!=null and gps_lon!=''">
+                `gps_lon`=#{gps_lon},
+            </if>
+            <if test="range!=null and range!=''">
+                `range`=#{range},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                `isdel`=#{isdel},
+            </if>
+            <if test="state!=null and state!=''">
+                `state`=#{state},
+            </if>
+            <if test="village!=null and village!=''">
+                `village`=#{village},
+            </if>
+            <if test="userid!=null and userid!=''">
+                `userid`=#{userid},
+            </if>
+            <if test="fee!=null and fee!=''">
+                `fee`=#{fee},
+            </if>
+            <if test="khao!=null and khao!=''">
+                `khao`=#{khao},
+            </if>
+            <if test="bank!=null and bank!=''">
+                `bank`=#{bank},
+            </if>
+            <if test="bank_name!=null and bank_name!=''">
+                `bank_name`=#{bank_name},
+            </if>
+        </set>
+        where `pid`=#{pid} and `buyid`=#{buyid}
+    </update>
+</mapper>

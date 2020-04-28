@@ -1,0 +1,8 @@
+com\whp\config\jwt\JwtFilter.class
+com\whp\config\shrio\ShiroConfiguration.class
+com\whp\config\DruidDBConfig.class
+com\whp\Application\Application.class
+com\whp\config\SchedulerConfig.class
+com\whp\config\jwt\JWTToken.class
+com\whp\config\shrio\MyRealm.class
+com\whp\config\ErrorConfig.class

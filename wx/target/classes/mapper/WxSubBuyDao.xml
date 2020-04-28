@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.wx.Dao.WxSubBuyDao">
+    <select id="WxSubBuySelect" resultType="map">
+        select wechat_appid,wechat_secret,pid from sub_buy where state=0 and isdel=0
+    </select>
+
+    <select id="WxSubBuyDan" resultType="map">
+        select wechat_appid,wechat_secret,pid from sub_buy where state=0 and isdel=0 and wechat_appid=#{wechat_appid}
+        limit 1;
+    </select>
+    <select id="WxSubBuyPidDan" resultType="map">
+        select wechat_appid,pid,wechat_secret from sub_buy where state=0 and isdel=0 and pid=#{buyid} limit 1;
+    </select>
+</mapper>

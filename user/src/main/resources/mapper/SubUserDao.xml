@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.user.Dao.SubUserDao">
+    <select id="SubUserSelectXx" resultType="map">
+        select pid,openid,nickname,img from sub_user where nickname=#{name} and buyid=#{buyid} and state=0 and isdel=0
+    </select>
+    <select id="SubUserSelectByBuyid" resultType="int">
+        select count(0) from sub_user where buyid=#{buyid} and isdel=0
+    </select>
+    <select id="SubUserSelectBySearch" resultType="map">
+        select * from sub_user where buyid=#{map.buyid} and isdel=0 and nickname is not null
+        <if test="map.search!=null and map.search!=''">
+            AND nickname like CONCAT("%",#{map.search},"%")
+        </if>
+    </select>
+    <update id="SubUserUpdateNumber">
+        update sub_user set coupon_num=#{coupon_num} where pid=#{userid}
+    </update>
+    <update id="SubUserUpdateSurplus">
+        update sub_user set surplus=surplus+#{payment} where pid=#{userid}
+    </update>
+    <select id="SubUserSelectByCount" resultType="int">
+        select count(0) from sub_user su
+        INNER JOIN buy_mumber bm ON bm.pid=su.mumberid
+        where su.buyid=#{map.buyid} and su.isdel=0
+        <if test="map.search!=null and map.search!=''">
+            AND su.nickname like CONCAT("%",#{map.search},"%")
+        </if>
+        order by su.createtime DESC
+    </select>
+    <select id="SubUserSelectByPage" resultType="map">
+        select DATE_FORMAT( su.createtime, '%Y-%m-%d %H:%i:%s' ) AS createtime,
+        DATE_FORMAT( su.updatetime, '%Y-%m-%d %H:%i:%s' ) AS updatetime,DATE_FORMAT(su.logintime, '%Y-%m-%d %H:%i:%s' )
+        AS logintime,su.* ,bm.nickname as bmnickname from sub_user su
+        INNER JOIN buy_mumber bm ON bm.pid=su.mumberid
+        where su.buyid=#{map.buyid} and su.isdel=0
+        <if test="map.search!=null and map.search!=''">
+            AND su.nickname like CONCAT("%",#{map.search},"%")
+        </if>
+        order by su.createtime DESC
+        limit #{page},#{num}
+    </select>
+</mapper>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyGoodsDao">
+    <select id="BuyGoodsSelectById" resultType="map">
+        select DATE_FORMAT(bg.opentime,'%Y-%m-%d %H:%i:%s') AS opentime,bg.* from buy_goods bg where bg.pid=#{pid}
+    </select>
+    <select id="BuyGoodsSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.opentime,
+        '%Y-%m-%d %H:%i'
+        ) AS opentime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i'
+        ) AS endtime,
+        a.*,b.`name`,b.img
+        FROM
+        buy_goods AS a
+        LEFT JOIN buy_class AS b ON a.classid = b.pid
+        WHERE
+        a.buyid = #{map.buyid}
+        AND a.isdel = 0
+        <if test="map.name!=null and map.name!=''">
+            and a.title LIKE CONCAT('%',#{map.name},'%')
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.classid!=null and map.classid!=''">
+            and a.classid=#{map.classid}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            <if test="map.style==0">
+                and (a.number-a.w_number)=0
+            </if>
+            <if test="map.style!=0">
+                and (a.number-a.w_number)!=0
+            </if>
+        </if>
+        <if test="map.date!=null and map.date!=''">
+            <if test="map.date==0">
+                and now() &gt; a.endtime
+            </if>
+            <if test="map.date==1">
+                and now() BETWEEN opentime and endtime
+            </if>
+            <if test="map.date==2">
+                and now() &lt; a.opentime
+            </if>
+        </if>
+
+        ORDER BY
+        a.opentime DESC
+        limit #{page},#{num}
+    </select>
+
+    <select id="BuyGoodsCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        buy_goods AS a
+        LEFT JOIN buy_class AS b ON a.classid = b.pid
+        WHERE
+        a.buyid = #{buyid}
+        AND a.isdel = 0
+        <if test="name!=null and name!=''">
+            and a.title LIKE CONCAT('%',#{name},'%')
+        </if>
+        <if test="state!=null and state!=''">
+            and a.state=#{state}
+        </if>
+        <if test="type!=null and type!=''">
+            and a.type=#{type}
+        </if>
+        <if test="classid!=null and classid!=''">
+            and a.classid=#{classid}
+        </if>
+        <if test="style!=null and style!=''">
+            <if test="style==0">
+                and (a.number-a.w_number)=0
+            </if>
+            <if test="style!=0">
+                and (a.number-a.w_number)!=0
+            </if>
+        </if>
+        <if test="date!=null and date!=''">
+            <if test="date==0">
+                and now() &gt; a.endtime
+            </if>
+            <if test="date==1">
+                and now() BETWEEN opentime and endtime
+            </if>
+            <if test="date==2">
+                and now() &lt; a.opentime
+            </if>
+        </if>
+    </select>
+    <select id="BuyGoodsDan" resultType="map">
+        select DATE_FORMAT(
+        a.opentime,
+        '%Y-%m-%d %H:%i'
+        ) AS opentime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i'
+        ) AS endtime,a.* from buy_goods as a where a.buyid=#{buyid} and a.title LIKE CONCAT("%",#{name},"%") and
+        a.isdel=0 ORDER BY a.createtime desc limit 10;
+    </select>
+
+    <insert id="BuyGoodsInsert">
+        INSERT INTO `buy_goods` (
+        `pid`,
+        `title`,
+        `img`,
+        `number`,
+        `xg_number`,
+        `y_price`,
+        `x_price`,
+        `message`,
+        `createtime`,
+        `updatetime`,
+        `opentime`,
+        `endtime`,
+        `buyid`,
+        `estimatetime`,
+        `type`,
+        `iscoupon`,
+        `isintegral`,
+        `isgive`,
+        `unit`,
+        `classid`,
+        `spell_number`,
+        `spell_price`,
+        `top`,
+        `reward`,
+        `sys_userid`,
+        `atlas`,
+        `spell_time`,
+        `atlaspic`,
+        `spell_state`,
+        `description`
+        )
+        VALUES
+        (
+        #{pid},
+        #{title},
+        #{img},
+        #{number},
+        #{xg_number},
+        #{y_price},
+        #{x_price},
+        #{message},
+        now(),
+        now(),
+        #{opentime},
+        #{endtime},
+        #{buyid},
+        #{estimatetime},
+        #{type},
+        #{iscoupon},
+        #{isintegral},
+        #{isgive},
+        #{unit},
+        #{classid},
+        #{spell_number},
+        #{spell_price},
+        #{top},
+        #{reward},
+        #{sys_userid},
+        #{atlas},
+        #{spell_time},
+        #{atlaspic},
+        #{spell_state},
+        #{description}
+        );
+
+
+    </insert>
+    <update id="BuyGoodsUpdate">
+        UPDATE `buy_goods`
+        SET title = #{title},
+        img = #{img},
+        number = #{number},
+        w_number=#{w_number},
+        xg_number = #{xg_number},
+        y_price = #{y_price},
+        x_price = #{x_price},
+        message = #{message},
+        updatetime = now(),
+        opentime = #{opentime},
+        endtime = #{endtime},
+        buyid = #{buyid},
+        estimatetime = #{estimatetime},
+        type = #{type},
+        iscoupon = #{iscoupon},
+        isintegral = #{isintegral},
+        isgive = #{isgive},
+        unit = #{unit},
+        classid = #{classid},
+        spell_number = #{spell_number},
+        spell_price = #{spell_price},
+        top = #{top},
+        reward = #{reward},
+        sys_userid = #{sys_userid},
+        `atlas`=#{atlas},
+        spell_time=#{spell_time},
+        `atlaspic`=#{atlaspic},
+        `spell_state`=#{spell_state},
+        `description`=#{description}
+        WHERE
+        `pid` = #{pid}
+    </update>
+
+    <update id="BuyGoodsUpdateState">
+        update `buy_goods`
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid}
+    </update>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyUserDao">
+    <update id="BuyUserUpdate">
+        update buy_user
+        <set>
+            <if test="nickname!=null and nickname!=''">
+                nickname=#{nickname},
+            </if>
+            <if test="phone!=null and phone!=''">
+                phone=#{phone},
+            </if>
+            <if test="img!=null and img!=''">
+                img=#{img},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+        </set>
+        where pid=#{userid}
+    </update>
+    <select id="BuyUserCom" resultType="map">
+        select * from buy_user where isdel=0 and pid=#{userid}
+    </select>
+    <update id="SubUserUpdateNumber">
+        update sub_user set coupon_num=coupon_num-#{num} where pid IN (select userid from `sub_coupon` where
+        couponid=#{pid})
+    </update>
+</mapper>

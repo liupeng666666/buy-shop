@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyCouponDao">
+
+    <insert id="BuyCouponInsert">
+        INSERT INTO buy_coupon (
+        `pid`,
+        `title`,
+        `cumulative`,
+        `reduce`,
+        `type`,
+        `createtime`,
+        `updatetime`,
+        <if test="opentime!=null and opentime!=''">
+            `opentime`,
+        </if>
+        <if test="endtime!=null and endtime!=''">
+            `endtime`,
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            `cycle`,
+        </if>
+        `style`,
+        <if test="classid!=null and classid!=''">
+            `classid`,
+        </if>
+        <if test="goodsid!=null and goodsid!=''">
+            `goodsid`,
+        </if>
+        `buyid`,
+        `number`,
+        `sys_userid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{title},
+        #{cumulative},
+        #{reduce},
+        #{type},
+        now(),
+        now(),
+        <if test="opentime!=null and opentime!=''">
+            #{opentime},
+        </if>
+        <if test="endtime!=null and endtime!=''">
+            #{endtime},
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            #{cycle},
+        </if>
+        #{style},
+        <if test="classid!=null and classid!=''">
+            #{classid},
+        </if>
+        <if test="goodsid!=null and goodsid!=''">
+            #{goodsid},
+        </if>
+        #{buyid},
+        #{number},
+        #{sys_userid}
+        );
+
+
+    </insert>
+    <update id="BuyCouponUpdate">
+        UPDATE buy_coupon
+        SET `title` = #{title},
+        `cumulative` = #{cumulative},
+        `reduce` = #{reduce},
+        `type` = #{type},
+        <if test="opentime!=null and opentime!=''">
+            `opentime` = #{opentime},
+        </if>
+        <if test="endtime!=null and endtime!=''">
+            `endtime` = #{endtime},
+        </if>
+        <if test="cycle!=null and cycle!=''">
+            `cycle` = #{cycle},
+        </if>
+        `style` = #{style},
+        <if test="classid!=null and classid!=''">
+            `classid` = #{classid},
+        </if>
+        <if test="goodsid!=null and goodsid!=''">
+            `goodsid` = #{goodsid},
+        </if>
+        `number` = #{number},
+        `sys_userid`=#{sys_userid}
+        WHERE
+        `pid` = #{pid}
+        and `buyid` = #{buyid}
+    </update>
+
+
+    <update id="BuyCouponUpdateState">
+        update buy_coupon
+        <set>
+            <if test="state!=null and state!=''">
+                state=#{state},
+            </if>
+            <if test="isdel!=null and isdel!=''">
+                isdel=#{isdel},
+            </if>
+            sys_userid=#{sys_userid},
+        </set>
+        WHERE pid=#{pid} and buyid=#{buyid}
+    </update>
+
+
+    <select id="BuyCouponSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.opentime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS opentime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS endtime,
+        a.*, b.img as 'goods_img',
+        b.title as 'goods_title',
+        c.img as 'class_img',
+        c.`name` as 'class_name'
+        FROM
+        buy_coupon AS a
+        LEFT JOIN buy_goods AS b ON a.goodsid = b.pid
+        LEFT JOIN buy_class AS c ON c.pid = a.classid
+        WHERE
+        a.isdel = 0
+        and a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and a.style=#{map.style}
+        </if>
+        <if test="map.classid!=null and map.classid!=''">
+            and a.classid=#{map.classid}
+        </if>
+        <if test="map.sq!=null and map.sq!=''">
+            <if test="map.sq==0">
+                and (a.number-a.w_number)=0
+            </if>
+            <if test="map.sq!=0">
+                and (a.number-a.w_number)!=0
+            </if>
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (a.title like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%') or c.name like
+            CONCAT('%',#{map.name},'%'))
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+    <select id="BuyCouponCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        buy_coupon AS a
+        LEFT JOIN buy_goods AS b ON a.goodsid = b.pid
+        LEFT JOIN buy_class AS c ON c.pid = a.classid
+        WHERE
+        a.isdel = 0
+        and a.buyid=#{map.buyid}
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and a.style=#{map.style}
+        </if>
+        <if test="map.classid!=null and map.classid!=''">
+            and a.classid=#{map.classid}
+        </if>
+        <if test="map.sq!=null and map.sq!=''">
+            <if test="map.sq==0">
+                and (a.number-a.w_number)=0
+            </if>
+            <if test="map.sq!=0">
+                and (a.number-a.w_number)!=0
+            </if>
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (a.title like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%') or c.name like
+            CONCAT('%',#{map.name},'%'))
+        </if>
+    </select>
+
+    <select id="BuySubCouponLogSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,
+        DATE_FORMAT(
+        a.opentime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS opentime,
+        DATE_FORMAT(
+        a.endtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS endtime,a.*,b.title,b.reduce,b.cumulative,c.img,c.nickname,b.style,
+        IF(now() &gt; a.endtime,1,0) as 'zt'
+        FROM
+        sub_coupon AS a
+        INNER JOIN buy_coupon AS b ON a.couponid = b.pid
+        INNER JOIN sub_user as c on c.pid=a.userid
+
+        where b.state=0 and b.isdel=0 and c.state=0 and c.isdel=0
+        and b.buyid=#{map.buyid}
+        <if test="map.state!=null and map.state!=''">
+            <if test="map.state==0">
+                and a.state=0 and now() &lt; a.endtime
+            </if>
+            <if test="map.state==1">
+                and a.state=1
+            </if>
+            <if test="map.state==2">
+                and (a.state=2 or now() &gt; a.endtime)
+            </if>
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and b.style=#{map.style}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (c.nickname like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%'))
+        </if>
+        ORDER BY a.createtime DESC
+        limit #{page},#{num}
+    </select>
+
+
+    <select id="BuySubCouponLogCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        sub_coupon AS a
+        INNER JOIN buy_coupon AS b ON a.couponid = b.pid
+        INNER JOIN sub_user as c on c.pid=a.userid
+
+        where b.state=0 and b.isdel=0 and c.state=0 and c.isdel=0
+        and b.buyid=#{map.buyid}
+        <if test="map.state!=null and map.state!=''">
+            <if test="map.state==0">
+                and a.state=0 and now() &lt; a.endtime
+            </if>
+            <if test="map.state==1">
+                and a.state=1
+            </if>
+            <if test="map.state==2">
+                and (a.state=2 or now() &gt; a.endtime)
+            </if>
+        </if>
+        <if test="map.style!=null and map.style!=''">
+            and b.style=#{map.style}
+        </if>
+        <if test="map.name!=null and map.name!=''">
+            and (c.nickname like CONCAT('%',#{map.name},'%') or b.title LIKE CONCAT('%',#{map.name},'%'))
+        </if>
+    </select>
+    <select id="SubCouponSelectByCouponId" resultType="int">
+        select count(0) from `sub_coupon` where couponid=#{pid} and isdel=0
+    </select>
+    <update id="SubCouponUpdateState">
+        update sub_coupon set isdel=#{map.isdel} where couponid=#{map.pid}
+    </update>
+</mapper>

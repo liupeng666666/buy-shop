@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.SysModuleDao">
+    <select id="SysModuleSelect" resultType="map">
+        SELECT
+        a.pid,a.`name`,a.url,a.type,a.top,a.css,a.parentid,a.level
+        FROM
+        buy_module AS a
+        INNER JOIN sys_module_buy AS b ON a.pid = b.buy_module_id
+        INNER JOIN buy_module_buy AS c ON c.buy_module_id = b.buy_module_id
+        INNER JOIN buy_role_module AS d ON d.moduleid = a.pid
+        INNER JOIN buy_role AS e ON e.pid = d.roleid
+        where a.state=0 and a.isdel=0 and a.type=1 and b.state=0 and c.state=0 and e.state=0 and e.isdel=0
+        and roleid=#{roleid} GROUP BY a.pid order by a.top asc
+    </select>
+</mapper>

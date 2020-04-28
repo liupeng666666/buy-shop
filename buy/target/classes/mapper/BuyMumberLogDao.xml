@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.buyshop.buy.Dao.BuyMumberLogDao">
+    <select id="BuyMumberLogSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(
+        a.createtime,
+        '%Y-%m-%d %H:%i:%s'
+        ) AS createtime,a.*,b.img,b.title,c.img as 'user_img',c.nickname,b.type,b.unit
+        FROM
+        buy_mumber_log AS a
+        INNER JOIN buy_goods AS b ON a.goodsid = b.pid
+        INNER JOIN sub_user AS c ON c.pid = a.userid
+        where a.buyid=#{buyid} and a.mumberid=#{mumberid}
+        limit #{page},#{num}
+    </select>
+    <select id="BuyMumberLogCount" resultType="int">
+        SELECT
+        count(0)
+        FROM
+        buy_mumber_log AS a
+        INNER JOIN buy_goods AS b ON a.goodsid = b.pid
+        INNER JOIN sub_user AS c ON c.pid = a.userid
+        where a.buyid=#{buyid} and a.mumberid=#{mumberid}
+    </select>
+</mapper>
